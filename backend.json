@@ -1,0 +1,18 @@
+{
+  "pizzas": [
+    {
+      "id": "06f1",
+      "url": "https://i.pinimg.com/236x/24/15/21/24152197af38deb718eb730992d441d0.jpg",
+      "title": "123",
+      "info": "123",
+      "price": "123"
+    },
+    {
+      "id": "70b2",
+      "url": "https://i.pinimg.com/236x/24/15/21/24152197af38deb718eb730992d441d0.jpg",
+      "title": "123",
+      "info": "123",
+      "price": "123"
+    }
+  ]
+}
