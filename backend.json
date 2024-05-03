@@ -1,18 +1,18 @@
 {
   "pizzas": [
     {
-      "id": "06f1",
-      "url": "https://i.pinimg.com/236x/24/15/21/24152197af38deb718eb730992d441d0.jpg",
+      "id": "04e3",
+      "url": "https://dodobrands.io/img/webp/pizza-dodomix.webp",
       "title": "123",
       "info": "123",
       "price": "123"
     },
     {
-      "id": "70b2",
-      "url": "https://i.pinimg.com/236x/24/15/21/24152197af38deb718eb730992d441d0.jpg",
-      "title": "123",
-      "info": "123",
-      "price": "123"
+      "id": "53f5",
+      "url": "https://dodobrands.io/img/webp/pizza-dodomix.webp",
+      "title": "2222222222",
+      "info": "22222222",
+      "price": "222222222222"
     }
   ]
 }

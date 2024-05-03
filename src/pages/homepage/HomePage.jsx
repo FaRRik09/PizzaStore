@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Typography } from '@mui/material'
 import banner1 from "../../images/image1.png";
 import banner2 from "../../images/image 12.png";
@@ -8,8 +8,13 @@ import banner5 from "../../images/image 16.png";
 import Card from '../../components/card/Card';
 import { Link } from 'react-router-dom';
 
-export default function HomePage() {
+export default function HomePage({ pizzas, getPizzas }) {
   const [selectCategory, setSelectCategory] = useState('все');
+
+  useEffect(() => {
+    getPizzas();
+  }, []);
+
   return (
     <div className='container'>
       <Box className="banner-parent">
@@ -36,8 +41,12 @@ export default function HomePage() {
 
       <Box>
         <Typography className='hp-h1'>Все пиццы</Typography>
-        <Box>
-          <Card/>
+        <Box className="card-parent">
+          {
+            pizzas.map((pizza) => (
+              <Card key={pizza.id} product={pizza} />
+            ))
+          }
         </Box>
       </Box>
     </div>
