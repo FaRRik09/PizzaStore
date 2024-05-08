@@ -2,7 +2,7 @@ import { Box, Button, Typography } from '@mui/material';
 import React, { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 
-export default function Details({ deletePizza, getPizzas, getOneProduct, oneProduct }) {
+export default function Details({ deletePizza, getPizzas, getOneProduct, oneProduct, toLocalStorage }) {
   let params = useParams();
   let navigate = useNavigate();
 
@@ -15,16 +15,16 @@ export default function Details({ deletePizza, getPizzas, getOneProduct, oneProd
     navigate('/');
   }
   return (
-    <div>
-      <Box>
+    <div className='details'>
+      <Box className='details-inner'>
         <img width={400} src={oneProduct?.url} alt={oneProduct?.title} />
-        <Box>
+        <Box className='details-inner__child'>
           <Typography>{oneProduct?.title}</Typography>
           <Typography>{oneProduct?.info}</Typography>
-          <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, natus?</Typography>
-          <Button variant='contained' sx={{background: '#ff0505', color: 'white'}}>В корзину</Button>
+          <Typography>{oneProduct?.price}Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, natus?</Typography>
+          <Button variant='contained' onClick={() => toLocalStorage({...oneProduct, quantity: 1, totalPrice: oneProduct.price})} sx={{background: '#ff0505', color: 'white'}}>В корзину</Button>
           <Button onClick={handleDelete} variant='contained' sx={{background: '#ff0505', color: 'white'}}>Удалить продукт</Button>
-          <Button variant='contained' sx={{background: '#fe5f1e', color: 'white'}}>Редактировать продукт</Button>
+          <Button onClick={() => navigate(`/edit-form/${params.id}`)} variant='contained' sx={{background: '#fe5f1e', color: 'white'}}>Редактировать продукт</Button>
         </Box>
       </Box>
     </div>

@@ -1,18 +1,25 @@
 {
   "pizzas": [
     {
-      "id": "04e3",
-      "url": "https://dodobrands.io/img/webp/pizza-dodomix.webp",
-      "title": "123",
-      "info": "123",
-      "price": "123"
-    },
-    {
       "id": "53f5",
       "url": "https://dodobrands.io/img/webp/pizza-dodomix.webp",
-      "title": "2222222222",
-      "info": "22222222",
-      "price": "222222222222"
+      "title": "Сырная",
+      "info": "0",
+      "price": 650
+    },
+    {
+      "id": "a61d",
+      "url": "https://menu2go.ru/images/food/146/146_266_20230809141538_1847.jpg",
+      "title": "Мясная",
+      "info": "1234444",
+      "price": 800
+    },
+    {
+      "id": "a613",
+      "url": "https://dostavka312.kg/public/public/photo/6363603bd5ca9.png",
+      "title": "Ассорти",
+      "info": "5555555555",
+      "price": 1100
     }
   ]
 }
